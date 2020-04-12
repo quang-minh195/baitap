@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 3</title>
+</head>
+<body>
+<script>
+    function tinhtuoi(x) {
+        let now = new Date();
+        let birthday = new Date(x);
+        let tuoi;
+            tuoi = now.getFullYear() - birthday.getFullYear();
+            if (birthday > now) {
+                alert( "Không hợp lệ")
+            }
+        return tuoi;
+    }
+    document.write("Tuổi:" + tinhtuoi("1999/10/17"));
+</script>
+</body>
+</html>

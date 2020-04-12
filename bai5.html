@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai5</title>
+</head>
+<body>
+<script>
+    let array = [
+        [1,2,3,4],
+        [4,6,6,7],
+        [7,8,4,9],
+        [4,8,2,1]
+    ];
+    let data= "";
+    for (let i =0 ; i <array.length ; i++) {
+        data += "<br>";
+        for (let j = 0 ; j <array[i].length; j++) {
+            data += array[i][j] + "&ensp;";
+        }
+    }
+        document.write(data);
+    // hiện thị ma trận vuông
+       let sum = 0;
+       for ( let i = 0 ; i < array.length ; i++) {
+           for ( let j = 0; j < array[i].length; j++ ) {
+               if ( i === j) {
+                   sum += array[i][j];
+               }
+                console.log(sum);
+           }
+       }
+       // vòng lặp đếm vị trí các ô rồi so sánh
+</script>
+</body>
+</html>
