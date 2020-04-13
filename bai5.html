@@ -13,6 +13,7 @@
         [4,8,2,1]
     ];
     let data= "";
+    let len = array.length;
     for (let i =0 ; i <array.length ; i++) {
         data += "<br>";
         for (let j = 0 ; j <array[i].length; j++) {
@@ -27,10 +28,22 @@
                if ( i === j) {
                    sum += array[i][j];
                }
-                console.log(sum);
+            }
+       }
+       // vòng lặp đếm vị trí các ô
+    document.write("Đường chéo 1 kq: ");
+       document.write( sum + "<br>");
+
+    let sum2 = 0;
+       for ( let i = len- 1; i >= 0; i--) {
+           for ( let j = 0; j < len; j++) {
+               if ( i === len - 1 - j) {
+                   sum2+= array[i][j];
+               }
            }
        }
-       // vòng lặp đếm vị trí các ô rồi so sánh
+       document.write("đường chéo 2 có kq:" );
+       document.write(sum2 + "<br>");
 </script>
 </body>
 </html>
